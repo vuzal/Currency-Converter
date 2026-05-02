@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="az">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valyuta Dəyişdirici</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container header-content">
+            <div class="logo">
+                <img src="bankLogo.svg" alt="Bank Logo">
+            </div>
+            <nav class="nav">
+                <a href="#" class="active">BANK</a>
+                <a href="#">BİZNES</a>
+                <a href="#">FƏRDİ</a>
+                <a href="#">KART</a>
+                <a href="#">ONLİNE</a>
+                <a href="#">MÜRACİƏT</a>
+                <a href="#">HAQQIMIZDA</a>
+            </nav>
+            <button class="login-btn">LOGİN</button>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1 class="page-title">Valyuta dəyişdir</h1>
+
+        <div class="converter-wrapper">
+            <div class="col">
+                <div class="label">Daxil et/Dəyiş</div>
+                <div class="tabs">
+                    <button class="tab active">RUB</button>
+                    <button class="tab">USD</button>
+                    <button class="tab">EUR</button>
+                    <button class="tab">GBP</button>
+                </div>
+                <div class="box input-box">
+                    <input type="text" id="amount-in" value="5000" inputmode="decimal" pattern="^[0-9]*\.?[0-9]*$">
+                    <div class="rate" id="rate-text-in">1 RUB = 0.0135 USD</div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="label">Daxil et/Dəyiş</div>
+                <div class="tabs">
+                    <button class="tab">RUB</button>
+                    <button class="tab active">USD</button>
+                    <button class="tab">EUR</button>
+                    <button class="tab">GBP</button>
+                </div>
+                <div class="box">
+                    <input type="text" id="amount-out" value="67.6685" inputmode="decimal" pattern="^[0-9]*\.?[0-9]*$">
+                    <div class="rate" id="rate-text-out">1 USD = 73.8896 RUB</div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="label">Hansı bank?</div>
+                <div class="tabs">
+                    <button class="tab">ABC</button>
+                    <button class="tab active">NEW</button>
+                    <button class="tab">AME</button>
+                    <button class="tab">RED</button>
+                </div>
+                <div class="rates-container">
+                    <div class="rate-box">
+                        <div class="rate-type">BUY</div>
+                        <div class="rate-value">
+                            <input type="text" id="buy-rate" value="66.15" readonly inputmode="decimal"
+                                pattern="^[0-9]*\.?[0-9]*$">
+                        </div>
+                    </div>
+                    <div class="rate-box">
+                        <div class="rate-type">SELL</div>
+                        <div class="rate-value">
+                            <input type="text" id="sell-rate" value="67.83" readonly inputmode="decimal"
+                                pattern="^[0-9]*\.?[0-9]*$">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>
